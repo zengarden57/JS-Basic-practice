@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Functions</title>
+  </head>
+  <body>
+    <script>
+      /*
+      function greeting()         // shortcut for
+      {                                // var greeting = function()
+                                          //          {console.log('hello');}
+        console.log('hello');              // Hoisting, allows function to be called before function is written
+      }
+
+      greeting();
+
+      const num = 2;
+
+      const function1 = function ()   // anonymous function
+      {
+        console.log('hello2');
+      };
+
+      console.log(function1);
+      console.log(typeof function1);
+      function1();
+
+      const object1 = 
+      {
+        num: 2,
+        fun: function greeting()
+        {
+            console.log('hello3');
+        }
+      };
+
+      object1.fun();
+
+      function display(param)
+      {
+        console.log(param);
+      }
+
+      display(2);
+
+      function run(param)
+      {
+        param();
+      }
+
+      run(function()                        // callback function
+        {
+            console.log('hello4');
+        });
+        */
+        
+        // Set Timeout
+
+        setTimeout(function()
+        {
+            console.log('timeout');
+        }, 3000);
+    </script>
+  </body>
+</html>

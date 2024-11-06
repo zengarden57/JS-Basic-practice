@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>11 Challenge Exercises</title>
+    </head>
+    
+    <body>
+
+        <script>
+           // 11o
+
+           function trueSearch(words)
+            {
+                let array = {};
+                let index = -1;
+
+                for (let i = 0; i < words.length; i++)
+                {
+                    if (words[i] === 'search')
+                    {
+                        index = i;
+                    }
+                }
+                console.log(index);
+            }
+
+            trueSearch(['hello', 'world', 'search', 'good']);
+            trueSearch(['not', 'found']);
+
+            // 11p
+
+            function trueSearch(words)
+            {
+                let array = {};
+                let index = -1;
+
+                for (let i = 0; i < words.length; i++)
+                {
+                    if (words[i] === 'search')
+                    {
+                        index = i;
+                        break;
+                    }
+                }
+                console.log(index);
+            }
+
+            trueSearch(['hello', 'world', 'search', 'good', 'search']);
+
+            // 11q
+
+            function findIndex(array,word)
+            {
+                for (let i = 0; i < array.length; i++)
+                {
+                    if (array[i] === word)
+                    {
+                        index = i;
+                        break;
+                    }
+                    else
+                    {
+                        index = -1;
+                    }
+                }
+                console.log(index);
+            }
+
+            findIndex(['green', 'red', 'blue', 'red'], 'red');
+            findIndex(['green', 'red', 'blue', 'red'], 'yellow');
+
+            // 11r
+
+            function removeEgg(foods)
+            {
+                let egglessArray = [];
+                
+                for (let i = 0; i < foods.length; i++)
+                {
+                    if (foods[i] === 'egg')
+                    {
+                        continue; 
+                    }
+                    egglessArray.push(foods[i]);
+                }
+                console.log(egglessArray);
+            }
+
+            removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']);
+
+            // 11s
+
+            function removeEgg1(foods)
+            {
+                let egglessArray = [];
+                let eggsRemoved = 0;
+                
+                for (let i = 0; i < foods.length; i++)
+                {
+                    if ((foods[i] === 'egg') && (eggsRemoved < 2))
+                    {
+                        eggsRemoved++;
+                        continue; 
+                    }
+                    egglessArray.push(foods[i]);
+                }
+                console.log(egglessArray);
+            }
+
+            removeEgg1(['egg', 'apple', 'egg', 'egg', 'ham']);
+
+            // 11t
+
+            function removeEgg2(foods)
+            {
+                let egglessArray = [];
+                let eggsRemoved = 0;
+
+                foods.reverse();
+                
+                for (let i = 0; i < foods.length; i++)
+                {
+                    if ((foods[i] === 'egg') && (eggsRemoved < 2))
+                    {
+                        eggsRemoved++;
+                        continue; 
+                    }
+                    egglessArray.push(foods[i]);
+                }
+                egglessArray.reverse();
+                console.log(egglessArray);
+            }
+
+            removeEgg2(['egg', 'apple', 'egg', 'egg', 'ham']);
+
+            // 11u
+
+            function removeEgg3(foods)
+            {
+                let egglessArray = [];
+                let eggsRemoved = 0;
+
+                foods.reverse();
+                
+                for (let i = 0; i < foods.length; i++)
+                {
+                    if ((foods[i] === 'egg') && (eggsRemoved < 2))
+                    {
+                        eggsRemoved++;
+                        continue; 
+                    }
+                    egglessArray.push(foods[i]);
+                }
+                egglessArray.reverse();
+                console.log(egglessArray);
+            }
+
+            removeEgg3(['egg', 'apple', 'egg', 'egg', 'ham']);
+                 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+*
+{
+  font-size: 16px;
+  font-family: "Poppins";
+}
+
+.button-add-cart
+{
+  background: yellow;
+  margin-right: 5px;
+  border-width: 3px;
+  cursor: pointer;
+}
+
+.button-buy-now
+{
+  background: orange;
+  border-width: 3px; 
+  cursor: pointer; 
+}

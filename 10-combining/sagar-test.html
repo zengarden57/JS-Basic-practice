@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button Toggle</title>
+    <style>
+        .active 
+        {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="toggleButton(this)" class="button">Button 1</button>
+    <button onclick="toggleButton(this)" class="button">Button 2</button>
+    <button onclick="toggleButton(this)" class="button">Button 3</button>
+<script>
+        function toggleButton(button) 
+        {
+            let buttons = document.querySelectorAll('.button');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+        }
+</script>
+
+</body>
+</html>

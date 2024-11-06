@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Document Object Model (DOM)</title>
+    </head>
+
+    <body>
+        <button>9a</button>
+        <button class="js-9b-button">9b</button>
+
+        <p>-------------- 9c --------------</p>
+
+        <button 
+            class="heads"
+            onclick="headsOrTails('heads');"
+            >heads</button>
+        <button 
+            class="tails"
+            onclick="headsOrTails('tails');"
+            >tails</button>
+        <p class="js-heads-tails"></p>
+        
+        <script>
+            console.log(document.querySelector('button'));
+
+            document.querySelector('.js-9b-button')
+                .innerHTML = '9b done!';
+
+            
+            let pick = document.querySelector('.js.heads-tails');
+            
+            function headsOrTails(pick)
+            {
+                if (pick === 'heads')
+                {
+                    document.querySelector('.js-heads-tails')
+                        .innerHTML = `You chose ${pick}`;
+                }
+                if (pick === 'tails')
+                {
+                    document.querySelector('.js-heads-tails')
+                        .innerHTML = `You chose ${pick}`;
+                }
+            }
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>6a Exercises</title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+    // Time of Day
+    
+    let hour = '1600';
+    let timeofDay = '';
+    const name = 'Zen!'
+
+    if (hour >= 600 && hour < 1300)
+    {
+        timeofDay = 'morning';
+    }
+    else if (hour > 1200 && hour < 1800)
+    {
+        timeofDay = 'afternoon';
+    }
+    else
+    {
+        timeofDay = 'night';
+    }
+
+    console.log(`Good ${timeofDay} ${name}. Time is now ${hour} HRS.`);
+
+    // Theme Park Discount Eligibility
+
+    let age = 67;
+    let discountStatus = '';
+    const isHoliday = true;
+
+    if((age >= 65 || age <= 6) && (isHoliday === true))
+    {
+        discountStatus = 'Discount';
+    }
+    else
+    {
+        discountStatus = 'No discount';
+    }
+
+    console.log(discountStatus);
+
+    // Random Number Guesser (IF variant)
+
+    let randomNumber = Math.random();
+    let result = '';
+
+    if(randomNumber < 0.5)
+    {
+        result = 'heads';
+    }
+    else
+    {
+        result = 'tails';
+    }
+
+    console.log(result);
+
+    let guess = 'heads';
+
+    if (guess === result)
+    {
+        console.log('You win!');
+    }
+    else
+    {
+        console.log('You lose!')
+    }
+
+    // Random Number Guesser (Ternary variant)
+
+    let randomNumber2 = Math.random();
+    const result2 = randomNumber < 0.5 ? 'heads' : 'tails'; 
+
+    const guess2 = 'heads';
+    console.log(guess2 === result2 ? 'You Win!' : 'You Lose!');
+</script>
+</html>
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>10 Exercises</title>
+        <link rel="stylesheet" href="10-exercises.css">
+    </head>
+
+    <body>  
+        <div class="amazon-buttons">
+            <button 
+                class="amazon-button"
+                >Add to Cart</button>
+        </div>
+
+        <div class="uber-buttons">
+            <button 
+                class="request-now-button"
+                >Request now</button>
+            <button 
+                class="schedule-later-button"
+                >Schedule for later</button>
+        </div>
+       
+        <div class="test-buttons">
+            <button 
+                class="js-button"
+                >Test</button>
+        </div>
+
+        <div class="toggle-buttons">
+            <button 
+                class="toggle-button js-toggle-1"
+                onclick="buttonStatusToggle('.js-toggle-1');"
+                >Gaming</button>
+
+            <button
+                class="toggle-button js-toggle-2"
+                onclick="buttonStatusToggle('.js-toggle-2');"
+                >Music</button>
+            <button
+                class="toggle-button js-toggle-3"
+                onclick="buttonStatusToggle('.js-toggle-3');"
+                >Tech</button>
+        </div>
+
+        <div class="amazon-shipping-calculator">
+            <p>Amazon Shipping Calculator</p>
+            <p>Orders under $40 = +$10 shipping.</p>
+            <p>Orders over $40 = FREE shipping.</p>
+            <input placeholder="Cost of order" class="js-cost-input css-cost-input" onkeydown="handleCostKeyDown(event)"
+            ><button 
+                class="calculate"
+                onclick="calculateTotal();"
+                >Calculate</button>
+            <p class="js-total-cost"></p>
+            <p class="js-error-message error-message"></p>
+        </div>
+    </body>
+
+    <script src="10-exercises.js"></script>
+</html>

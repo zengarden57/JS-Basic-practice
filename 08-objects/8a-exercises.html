@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Objects</title>
+    </head>
+
+    <body>
+
+        <script>
+            // Basketball Product Object
+            const product =
+            {
+                name: 'basketball',
+                price: 2095
+            }
+
+            console.log(product);
+
+            // Price Update
+            
+            product.price = 2595;
+            console.log(product);
+
+            // Adding deliver-time property
+
+            product['delivery-time'] = '3 days';
+            console.log(product);
+
+            // Price Compare Function
+
+            const product1 = 
+            {
+                name: 'pepper',
+                price: 20
+            }
+
+            const product2 = 
+            {
+                name: 'salt',
+                price: 30,
+            }
+
+            function comparePrice(product1, product2)
+            {
+                if (product1.price > product2.price)
+                {
+                   console.log(product2);
+                } 
+                else if (product2.price > product1.price)
+                {
+                    console.log(product1);
+                }
+            }
+
+            comparePrice(product1, product2);
+
+            // Value Compare Function
+
+            function isSameProduct(product3, product4)
+            {
+                if(product3.name != product4.name)
+                {
+                    return false;
+                }
+                else if (product3.price != product4.price)
+                {
+                    return false;
+                }
+                else if ((product3.name === product4.name) && (product3.price === product4.price))
+                {
+                    return true;
+                }
+            }
+
+            const product3 =
+            {
+                name: 'football',
+                price: 500
+            }
+
+            const product4 =
+            {
+                name: 'football',
+                price: 500
+            }
+
+            console.log(isSameProduct(product3, product4));
+
+            // Converting String to Lowercase
+
+            console.log('Good Morning'.toLowerCase());
+
+            // Repeating a String
+
+            console.log('test'.repeat(2));
+            console.log('Sagar'.repeat(5));
+        </script>
+    </body>
+
+</html>
